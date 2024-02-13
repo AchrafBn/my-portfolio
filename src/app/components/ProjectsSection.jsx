@@ -7,58 +7,57 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    title: "LnFound",
+    description:
+      "A Mobile App Facilitating Connections Between Lost Item Owners and Finders via QR Codes",
+    image: "/images/projects/lnfound.png",
+    tag: ["All", "Mobile"],
+    tools: ["React Native", "Expo", "Firebase"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://lnfound.com/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    title: "Maison des géante",
+    description: "A Mobile app that enhances museum visits",
+    image: "/images/projects/mdg.png",
+    tag: ["All", "Mobile"],
+    tools: ["React Native", "Expo", "Strapi"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://drive.google.com/file/d/1CWLqyDSlG0bXcEgu8tfnzoZbbWylJSZE/view",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "CIFIPE",
+    description:
+      "A Training School for Teachers and Managers and Directors of general education",
+    image: "/images/projects/cifipe.png",
+    tools: ["Wordpress"],
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://cifipe.ma",
   },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 4,
+  //   title: "PaMappy",
+  //   description: "Project 4 description",
+  //   image: "/images/projects/4.png",
+  //   tag: ["All", "Mobile"],
+  //   tools: ["React Native", "Expo"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "YALLA APP",
+  //   description: "Project 5 description",
+  //   image: "/images/projects/6.png",
+  //   tools: ["React Native", "Graphql"],
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -81,10 +80,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
+      <h2 className="text-center text-4xl font-bold text-white">
+        Delivered Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-12">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -101,7 +100,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3  md:gap-8">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -116,6 +115,7 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
+              tools={project.tools}
               previewUrl={project.previewUrl}
             />
           </motion.li>

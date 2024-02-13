@@ -26,8 +26,8 @@ const HeroSection = () => {
         </p>
         <div>
           <Link
-            href="#work"
-            class="text-white tracking-widest px-6 font-semibold inline-block py-3 w-full sm:w-fit rounded-md mr-4  bg-gradient-to-r from-purple-500 to-pinkLemonade hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center"
+            href="#projects"
+            className="text-white tracking-widest px-6 font-semibold inline-block py-3 w-full sm:w-fit rounded-md mr-4  bg-gradient-to-r from-purple-500 to-pinkLemonade hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center"
           >
             View my work
           </Link>
