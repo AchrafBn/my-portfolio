@@ -51,45 +51,39 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+    <section id="about">
+      <div className="py-8 px-4 xl:px-16">
+        <div className="flex items-center flex-col pb-8">
+          <Image
+            alt="portrait"
+            src="/images/about-image.png"
+            width={200}
+            className="mb-6"
+            priority
+            height={100}
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
+          />
+          <h2 className="text-4xl text-center font-bold text-white">
+            About Me
+          </h2>
+        </div>
+
+        <div className="px-12 md:px-36">
+          <p className="text-lg   leading-10   my-4 ">
+            I am a Senior Front-end Developer with 5 years of experience,
+            skilled in a variety of technologies including React, React
+            Native/Expo ,Apollo client, Typescript and NodeJS for creating
+            backend services using REST APIs and GraphQL
           </p>
-          <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+          <p className="text-lg    leading-10 my-4">
+            My expertise with these tools enables me to efficiently build and
+            manage both the front-end and back-end components of web and mobile
+            applications across various tools and frameworks within the
+            JavaScript ecosystem.
+          </p>
         </div>
       </div>
     </section>
