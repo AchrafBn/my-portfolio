@@ -16,21 +16,21 @@ const HeroSection = () => {
         transition={{ duration: 0.5 }}
         className="sm:text-center"
       >
-        <h1 className="text-white mb-4 text-4xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold px-12">
+        <h1 className="text-white mb-4 text-4xl sm:text-2xl lg:text-6xl lg:leading-normal font-extrabold px-64">
           <span>Hello, I&apos;m a </span>
-          <span className="text-burntPink">Full Stack developer</span>
+          <span className="text-burntPink">Front end developer</span>
         </h1>
         <p className="text-white text-base sm:text-2xl  mb-6  sm:px-64 leading-9">
           Crafting modern web interfaces  for businesses and startups by
-          converting their ideas into effective online solutions
+          converting their design into effective online solutions
         </p>
         <div>
-          <Link
+          <a
             href="#projects"
             className="text-white tracking-widest px-6 font-semibold inline-block py-3 w-full sm:w-fit rounded-md mr-4  bg-gradient-to-r from-purple-500 to-pinkLemonade hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center"
           >
             View my work
-          </Link>
+          </a>
         </div>
         <div className="flex gap-4 py-8 justify-center">
           <Link

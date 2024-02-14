@@ -52,7 +52,7 @@ const AboutSection = () => {
 
   return (
     <section id="about">
-      <div className="py-8 px-4 xl:px-16">
+      <div className="px-4 xl:px-16">
         <div className="flex items-center flex-col pb-8">
           <Image
             alt="portrait"

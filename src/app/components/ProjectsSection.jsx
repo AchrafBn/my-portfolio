@@ -7,17 +7,6 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "LnFound",
-    description:
-      "A Mobile App Facilitating Connections Between Lost Item Owners and Finders via QR Codes",
-    image: "/images/projects/lnfound.png",
-    tag: ["All", "Mobile"],
-    tools: ["React Native", "Expo", "Firebase"],
-    gitUrl: "/",
-    previewUrl: "https://lnfound.com/",
-  },
-  {
-    id: 2,
     title: "Maison des géante",
     description: "A Mobile app that enhances museum visits",
     image: "/images/projects/mdg.png",
@@ -28,7 +17,29 @@ const projectsData = [
       "https://drive.google.com/file/d/1CWLqyDSlG0bXcEgu8tfnzoZbbWylJSZE/view",
   },
   {
+    id: 2,
+    title: "LnFound",
+    description:
+      "A Mobile App Facilitating Connections Between Lost Item Owners and Finders via QR Codes",
+    image: "/images/projects/lnfound.png",
+    tag: ["All", "Mobile"],
+    tools: ["React Native", "Expo", "Firebase"],
+    gitUrl: "/",
+    previewUrl: "https://lnfound.com/",
+  },
+  {
     id: 3,
+    title: "PaMappy",
+    description: "A Mobile app designed for a fertility clinic",
+    image: "/images/projects/pamapy.png",
+    tag: ["All", "Mobile"],
+    tools: ["React Native", "Expo"],
+    gitUrl: "/",
+    previewUrl:
+      "https://play.google.com/store/apps/details?id=net.linksoftware.pamappy",
+  },
+  {
+    id: 4,
     title: "CIFIPE",
     description:
       "A Training School for Teachers and Managers and Directors of general education",
@@ -38,16 +49,7 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://cifipe.ma",
   },
-  // {
-  //   id: 4,
-  //   title: "PaMappy",
-  //   description: "Project 4 description",
-  //   image: "/images/projects/4.png",
-  //   tag: ["All", "Mobile"],
-  //   tools: ["React Native", "Expo"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
+
   // {
   //   id: 5,
   //   title: "YALLA APP",
@@ -79,7 +81,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" className="my-16">
       <h2 className="text-center text-4xl font-bold text-white">
         Delivered Projects
       </h2>

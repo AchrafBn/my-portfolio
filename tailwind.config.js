@@ -22,6 +22,7 @@ module.exports = {
       pinkLemonade: "#E02F7B",
       balticSea: "#272727",
       rangoonGreen: "#1B1B1B",
+      monsoon: "#888888",
     },
   },
   plugins: [],
