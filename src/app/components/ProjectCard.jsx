@@ -2,7 +2,14 @@ import React from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, previewUrl, tools }) => {
+const ProjectCard = ({
+  imgUrl,
+  title,
+
+  description,
+  previewUrl,
+  tools,
+}) => {
   return (
     <div
       className="h-52 md:h-72 rounded-xl relative group"

@@ -57,25 +57,25 @@ const AboutSection = () => {
           <Image
             alt="portrait"
             src="/images/about-image.png"
-            width={200}
+            width={140}
             className="mb-6"
             priority
-            height={100}
+            height={90}
             style={{
               width: "auto",
               height: "auto",
             }}
           />
-          <h2 className="text-4xl text-center font-bold text-white">
+          <h2 className="text-3xl text-center font-bold text-white">
             About Me
           </h2>
         </div>
 
         <div className="px-12 md:px-36">
           <p className="text-lg   leading-10   my-4 ">
-            I am a Senior Front-end Developer with 5 years of experience,
-            skilled in a variety of technologies including React, React
-            Native/Expo ,Apollo client, Typescript and NodeJS for creating
+            My name is Achraf, I am a Full Stack Developer with 5 years of
+            experience, skilled in a variety of technologies including React,
+            React Native/Expo ,Apollo client, Typescript and NodeJS for creating
             backend services using REST APIs and GraphQL
           </p>
           <p className="text-lg    leading-10 my-4">

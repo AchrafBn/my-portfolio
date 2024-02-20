@@ -49,17 +49,6 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://cifipe.ma",
   },
-
-  // {
-  //   id: 5,
-  //   title: "YALLA APP",
-  //   description: "Project 5 description",
-  //   image: "/images/projects/6.png",
-  //   tools: ["React Native", "Graphql"],
-  //   tag: ["All", "Mobile"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
 ];
 
 const ProjectsSection = () => {
@@ -81,11 +70,11 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="my-16">
+    <section id="projects" className="my-24">
       <h2 className="text-center text-4xl font-bold text-white">
         Delivered Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-12">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-8">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
