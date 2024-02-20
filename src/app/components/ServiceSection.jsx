@@ -66,10 +66,10 @@ const ServicesSection = () => {
               href={`mailto:achraf.benaomar@gmail.com?subject=${service.title}`}
             >
               <Image src={service.src} className="mb-2" alt="Icon" />
-              <h3 className="mb-2 text-lg  font-medium tracking-normal text-gray-900 dark:text-white">
+              <h3 className="mb-2 text-lg  font-medium tracking-normal text-white">
                 {service.title}
               </h3>
-              <p className="text-gray-400 text-sm">{service.description}</p>
+              <p className="text-gray-300  text-sm">{service.description}</p>
             </a>
           </motion.li>
         ))}
