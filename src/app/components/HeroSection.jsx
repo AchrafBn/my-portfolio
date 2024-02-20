@@ -50,7 +50,7 @@ const HeroSection = () => {
             </Link>
             <Link
               className="transition duration-300 ease-in-out hover:scale-110"
-              href="https://www.linkedin.com/in/achrafdev/"
+              href="mailto:achraf.benaomar@gmail.com"
               target="_blank"
             >
               <Image src={MailIcon} alt="Linkedin Icon" />

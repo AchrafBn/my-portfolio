@@ -22,7 +22,7 @@ const navLinks = [
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "mailto:achraf.benaomar@gmail.com",
   },
 ];
 
