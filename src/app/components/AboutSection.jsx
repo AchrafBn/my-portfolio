@@ -41,23 +41,14 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
-
   return (
     <section id="about">
-      <div className="px-4 xl:px-16">
+      <div className="lg:px-16">
         <div className="flex items-center flex-col pb-8">
           <Image
             alt="portrait"
             src="/images/about-image.png"
-            width={140}
+            width={100}
             className="mb-6"
             priority
             height={90}
@@ -66,19 +57,19 @@ const AboutSection = () => {
               height: "auto",
             }}
           />
-          <h2 className="text-3xl text-center font-bold text-white">
+          <h4 className="text-3xl text-center font-bold text-white">
             About Me
-          </h2>
+          </h4>
         </div>
 
-        <div className="px-12 md:px-36">
-          <p className="text-lg   leading-10   my-4 ">
+        <div className="md:px-36">
+          <p className="text-base    leading-10   my-4 ">
             My name is Achraf, I am a Full Stack Developer with 5 years of
             experience, skilled in a variety of technologies including React,
             React Native/Expo ,Apollo client, Typescript and NodeJS for creating
             backend services using REST APIs and GraphQL
           </p>
-          <p className="text-lg    leading-10 my-4">
+          <p className="text-base     leading-10 my-4">
             My expertise with these tools enables me to efficiently build and
             manage both the front-end and back-end components of web and mobile
             applications across various tools and frameworks within the

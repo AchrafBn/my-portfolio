@@ -81,17 +81,21 @@ const toolsData = [
 const ToolsSection = () => {
   return (
     <section id="projects" className="my-20">
-      <h2 className="text-center text-4xl font-bold text-white">Skills</h2>
+      <h2 className="text-center text-3xl md:text-4xl font-bold text-white">
+        Skills
+      </h2>
 
-      <ul className="my-12 flex gap-8">
-        {toolsData.map((tool, index) => (
-          <div
+      <ul className="my-12 flex gap-8 ">
+        {toolsData.map((tool) => (
+          <li
             key={tool.id}
-            className="text-center 	transition duration-300 ease-in-out hover:scale-110 md:justify-end md:flex md:flex-col md:gap-4 md:items-center"
+            className="md:text-center 	transition duration-300 ease-in-out md:hover:scale-110"
           >
             <Image src={tool.src} alt="Icon" />
-            <span className="text-[#ADB7BE]">{tool.name}</span>
-          </div>
+            <span className="sr-only sm:not-sr-only text-[#ADB7BE] ">
+              {tool.name}
+            </span>
+          </li>
         ))}
       </ul>
     </section>

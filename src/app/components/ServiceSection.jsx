@@ -41,29 +41,34 @@ const ServicesSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="services" className="my-44">
+    <section id="services" className="my-20 md:my-44">
       <div className="text-center">
-        <p className="text-pinkLemonade text-lg font-normal">What I can do</p>
-        <h2 className="text-4xl font-bold pb-10 text-white mt-2">Services</h2>
+        <p className="text-pinkLemonade text-md  md:text-lg font-normal mb-2">
+          What I can do
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold pb-10 text-white">
+          Services
+        </h2>
       </div>
 
-      <ul ref={ref} className="grid md:grid-cols-3  md:gap-8">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-6 md:gap-8">
         {servicesData.map((service, index) => (
           <motion.li
             variants={cardVariants}
-            className="h-full max-w-sm border border-balticSea hover:border-pinkLemonade  p-6 bg-balticSea  hover:border-pinkLemonade   rounded-lg cursor-pointer"
+            className="h-full max-w-sm border border-balticSea hover:border-pinkLemonade   bg-balticSea   rounded-lg cursor-pointer"
             key={service.id}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <a
+              className="p-8 inline-block"
               href={`mailto:achraf.benaomar@gmail.com?subject=${service.title}`}
             >
               <Image src={service.src} className="mb-2" alt="Icon" />
-              <h5 className="mb-2 text-lg  font-medium tracking-normal text-gray-900 dark:text-white">
+              <h3 className="mb-2 text-lg  font-medium tracking-normal text-gray-900 dark:text-white">
                 {service.title}
-              </h5>
+              </h3>
               <p className="text-gray-400 text-sm">{service.description}</p>
             </a>
           </motion.li>
