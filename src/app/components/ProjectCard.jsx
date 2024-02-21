@@ -25,7 +25,7 @@ const ProjectCard = ({
           <h5 className="text-lg md:text-2xl text-balticSea  font-semibold mb-2">
             {title}
           </h5>
-          <p className="mx-4 text-sm md:text-md font-medium text-balticSea">
+          <p className="mx-4 text-sm md:text-base font-medium text-balticSea">
             {description}
           </p>
 

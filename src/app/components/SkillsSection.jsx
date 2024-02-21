@@ -85,14 +85,14 @@ const ToolsSection = () => {
         Skills
       </h2>
 
-      <ul className="my-12 flex gap-8 justify-center ">
+      <ul className="my-12 flex flex-row flex-wrap  sm:gap-8 gap-6 justify-center  items-center">
         {toolsData.map((tool) => (
           <li
             key={tool.id}
-            className="text-center 	transition duration-300 ease-in-out md:hover:scale-110"
+            className="flex flex-col items-center text-center   transition basis-20 sm:basis-16  duration-300 ease-in-out md:hover:scale-110"
           >
-            <Image src={tool.src} alt="Icon" />
-            <span className="sr-only sm:not-sr-only text-[#ADB7BE] ">
+            <Image src={tool.src} className="mb-3" alt="Icon" />
+            <span className="text-[#ADB7BE] text-sm sm:text-base ">
               {tool.name}
             </span>
           </li>
